@@ -32,5 +32,3 @@ Here are some projects highlighted in this portfolio:
 
 ```
 ✨ This portfolio is a work in progress and will be updated regularly with new projects and improvements.
-
-If you want, I can **also make it visually cooler** by adding **screenshots of your projects** and a live demo badge at the top, so it looks more professional on GitHub.  
