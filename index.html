@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rayan — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <meta name="description" content="Rayan — portfolio: cybersecurity, AI, and web experiments">
+</head>
+
+<body>
+    <a class="skip-link" href="#hero">Skip to main content</a>
+
+    <!-- Neural Network Background Animation -->
+    <canvas id="neural-bg"></canvas>
+
+    <!-- Theme Toggle -->
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark/light mode">🌙</button>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Rayan</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="section hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Rayan</h1>
+                <p class="hero-subtitle">Code Alchemist • Cybersecurity • AI Builder</p>
+                <p class="hero-description">I build secure systems, experimental web UIs, experimental networking & ethical pentesting tools , and AI-powered tools.</p>
+                <div class="social-links">
+                    <a href="https://github.com/Fally00" target="_blank" rel="noopener noreferrer" aria-label="GitHub">🐙 GitHub</a>
+                    <a href="https://linkedin.com/in/yourname" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">💼 LinkedIn</a>
+                    <a href="mailto:rayanhisgam1234@gmail.com" aria-label="Email">📧 Email</a>
+                </div>
+            </div>
+            <div class="hero-avatar">
+                <div class="avatar-circle"> <img src="SS.jpg" alt="Rayan's avatar"></div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll down</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>Hello! I'm Rayan, a passionate developer specializing in cybersecurity, AI, and full-stack development (SOON). Active learner with ambition to understand core logic and fundemnetals of how things work and run .I love turning complex problems into elegant smart solutions.</p>
+                <ul class="timeline">
+                    <li><strong>2024:</strong> Focusing on AI fundemnetals & Networking basics.</li>
+                    <li><strong>2025 :</strong> Security automation and Structural Courses.</li>
+                    <li><strong>2026:</strong> Web development and full-stack projects.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Web development</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Html</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Projects about </h3>
+                    <div class="skill-tags">
+                        <span class="tag">C++</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Java</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Security & AI</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Cybersecurity</span>
+                        <span class="tag">TensorFlow</span>
+                        <span class="tag">Docker</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-image="images/neural-portfolio.png" data-github="https://github.com/yourname/neural-portfolio">
+                    <div class="project-thumb">Neural Portfolio</div>
+                    <h3>Neural Portfolio</h3>
+                    <p>A responsive template with JS UI and accessible design.</p>
+                    <button class="view-btn">View Details</button>
+                </div>
+                <div class="project-card" data-image="images/secure-ci.png" data-github="https://github.com/Fally00/WMS-Cpp">
+                    <div class="project-thumb">Warehouse Management System</div>
+                    <h3>Warehouse Management System</h3>
+                    <p>Functional Console System with the ability to store and manage data.</p>
+                    <button class="view-btn">View Details</button>
+                </div>
+                <div class="project-card" data-image="images/ai-agent.png" data-github="https://github.com/Fally00/Library-Managing-system-Java">
+                    <div class="project-thumb">Library Management System</div>
+                    <h3>Library Management System</h3>
+                    <p>in process to make the full system functional.</p>
+                    <button class="view-btn">View Details</button>
+                </div>
+                <div class="project-card" data-image="images/ai-agent.png" data-github="https://github.com/Fally00/Java-Calculator">
+                    <div class="project-thumb">GUI calculator </div>
+                    <h3>GUI calculator</h3>
+                    <p>functional Calculator .</p>
+                    <button class="view-btn" >View Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <form class="contact-form" id="contactForm" action="mailto:rayanhisgam1234@gmail.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="c_name">Name</label>
+                    <input id="c_name" type="text" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="c_email">Email</label>
+                    <input id="c_email" type="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="c_message">Message</label>
+                    <textarea id="c_message" name="message" rows="6" required></textarea>
+                    <div class="hint">Character count: <span id="msgCount">0</span>/1000</div>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Project Viewer Modal -->
+    <div class="viewer" id="projectViewer" aria-hidden="true">
+        <div class="viewer-overlay"></div>
+        <div class="viewer-card" role="dialog" aria-modal="true">
+            <button class="viewer-close" id="viewerClose" aria-label="Close viewer">×</button>
+            <div class="viewer-content">
+                <div class="viewer-img" id="viewerImgContainer"></div>
+                <div class="viewer-meta">
+                    <h3 id="viewerTitle"></h3>
+                    <p id="viewerDesc"></p>
+                    <a id="viewerGithub" href="#" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="2139_neural_portfolio/2139_neural_portfolio/tooplate-neural-scripts.js"></script>
+</body>
+</html>
