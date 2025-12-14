@@ -7,8 +7,6 @@ Welcome to my personal portfolio! This project showcases my skills, projects, an
 - [Features](#features)
 - [Projects](#projects)
 - [Technologies](#technologies)
-- [Usage](#usage)
-- [Contact](#contact)
 
 ## About
 This portfolio is a central place to display my work, including web projects, programming exercises, and other personal projects. It aims to highlight my skills in front-end development and provide a professional presentation for potential collaborators or employers.
@@ -32,3 +30,7 @@ Here are some projects highlighted in this portfolio:
 - **CSS3** – Styling, responsive design, and layout.  
 - **JavaScript** – Dynamic interactions and functionality.  
 
+```
+✨ This portfolio is a work in progress and will be updated regularly with new projects and improvements.
+
+If you want, I can **also make it visually cooler** by adding **screenshots of your projects** and a live demo badge at the top, so it looks more professional on GitHub.  
