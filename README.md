@@ -20,15 +20,21 @@ This portfolio is a central place to display my work, including web projects, pr
 
 ## Projects
 Here are some projects highlighted in this portfolio:
-- **Neural Portfolio** – A responsive template with JS UI and accessible design.
+- **Neural Portfolio** – A responsive template with JS UI and accessible design. [This current Project]
 - **Warehouse Management System** – Functional console system with the ability to store and manage data. [GitHub](https://github.com/Fally00/WMS-Cpp)
-- **Library Management System** – Work in progress.
-- **GUI Calculator** – Functional calculator with a clean interface.
+- **Library Management System** – Work in progress. [Github](https://fally00.github.io/My-Personal-Portfolio/)
+- **GUI Calculator** – Functional calculator with a clean interface. [Github](https://github.com/Fally00/Java-Calculator)
+- **Webbases file system** - Functional file system with system monitoring and logs archive . [Github](https://github.com/Fally00/Webbased-file-system-) 
 
 ## Technologies
 - **HTML5** – Semantic markup for structure.  
 - **CSS3** – Styling, responsive design, and layout.  
 - **JavaScript** – Dynamic interactions and functionality.  
+
+## You can visit the site on the hosted site by Github on 
+```
+https://fally00.github.io/My-Personal-Portfolio/
+```
 
 ```
 ✨ This portfolio is a work in progress and will be updated regularly with new projects and improvements.
