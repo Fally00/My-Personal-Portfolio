@@ -21,109 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
     themeToggle.textContent = theme === 'dark' ? '🌑' : '☀️';
   }
 
-
-
-
-
-  	 const canvas = document.getElementById('neural-bg');
-        const ctx = canvas.getContext('2d');
-        let nodes = [];
-
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-
-        class Node {
-            constructor(x, y) {
-                this.x = x;
-                this.y = y;
-                this.vx = (Math.random() - 0.5) * 0.5;
-                this.vy = (Math.random() - 0.5) * 0.5;
-                this.radius = Math.random() * 3 + 1;
-            }
-
-            update() {
-                this.x += this.vx;
-                this.y += this.vy;
-                if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
-                if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
-            }
-
-            draw() {
-                ctx.beginPath();
-                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-                ctx.fillStyle = '#00ffff';
-                ctx.fill();
-            }
-        }
-
-        function init() {
-            nodes = [];
-            for (let i = 0; i < 100; i++) {
-                nodes.push(new Node(Math.random() * canvas.width, Math.random() * canvas.height));
-            }
-        }
-
-        function connectNodes() {
-            for (let i = 0; i < nodes.length; i++) {
-                for (let j = i + 1; j < nodes.length; j++) {
-                    const dx = nodes[i].x - nodes[j].x;
-                    const dy = nodes[i].y - nodes[j].y;
-                    const dist = Math.sqrt(dx * dx + dy * dy);
-                    if (dist < 150) {
-                        ctx.beginPath();
-                        ctx.moveTo(nodes[i].x, nodes[i].y);
-                        ctx.lineTo(nodes[j].x, nodes[j].y);
-                        ctx.strokeStyle = `rgba(0, 255, 255, ${1 - dist / 150})`;
-                        ctx.lineWidth = 0.5;
-                        ctx.stroke();
-                    }
-                }
-            }
-        }
-
-        function animate() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            nodes.forEach(node => { node.update(); node.draw(); });
-            connectNodes();
-            requestAnimationFrame(animate);
-        }
-
-        init();
-        animate();
-
-        window.addEventListener('resize', () => {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-            init();
-        });		function animate() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-            nodes.forEach(node => {
-                node.update();
-                node.draw();
-            });
-
-            connectNodes();
-            requestAnimationFrame(animate);
-        }
-
-        // Initialize and start animation
-        init();
-        animate();
-
-        // Handle window resize
-        window.addEventListener('resize', () => {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-            init();
-        });
-
-        // Mouse move effect
-        window.addEventListener('mousemove', (e) => {
-            mouse.x = e.clientX;
-            mouse.y = e.clientY;
-        });
-
   // Intersection Observer for scroll animations
   const observerOptions = {
     threshold: 0.1,
@@ -154,7 +51,8 @@ document.addEventListener('DOMContentLoaded', () => {
   function openViewer(card) {
     const title = card.querySelector('h3')?.textContent || 'Project';
     const desc = card.querySelector('p')?.textContent || '';
-    const imgSrc = card.dataset.image || '';
+    const imgElement = card.querySelector('.project-image');
+    const imgSrc = imgElement ? imgElement.src : (card.dataset.image || '');
     const githubUrl = card.dataset.github || '#';
 
     viewerImgContainer.innerHTML = imgSrc ?
@@ -247,8 +145,8 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Here you would typically send the form data to a server
-      // For now, we'll just show a success message
+
+      // For now, just showing  a success message
       alert('Thank you for your message! I\'ll get back to you soon.');
 
       // Reset form
