@@ -33,9 +33,8 @@ Here are some projects highlighted in this portfolio:
 - **JavaScript** – Dynamic interactions and functionality.  
 
 ## You can visit the site on the hosted site by Github on 
-```
-https://fally00.github.io/My-Personal-Portfolio/
-```
+
+[Portfolio url](https://fally00.github.io/My-Personal-Portfolio/)
 
 ```
 ✨ This portfolio is a work in progress and will be updated regularly with new projects and improvements.
